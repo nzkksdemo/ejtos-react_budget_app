@@ -6,6 +6,7 @@ import Budget from './components/Budget';
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
+import AllocationForm from './components/AllocationForm';
 
 
 import { AppProvider } from './context/AppContext';
@@ -33,14 +34,10 @@ const App = () => {
                     <ExpenseList />
                 </div>
 
-                    {
-                        /* Add ExpenseItem component here */
-                    }        
-
-                    {
-                        /* Add AllocationForm component here under */
-                    }        
-
+                <h4>Change Allocation</h4>
+                <div>
+                    <AllocationForm />
+                </div>
             </div>
         </AppProvider>
     );
