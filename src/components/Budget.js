@@ -12,10 +12,10 @@ const Budget = () => {
     return (
         <div className="row g-3 align-items-center">
             <div className="col-auto">
-                <label htmlFor="budget" className="form-label m-0">Budget: £{budget}</label>
+                <label htmlFor="budget" className="form-label m-0">Budget:</label>
             </div>
-            <div className="col-auto">
-                <input id="budget" className="form-control" type="number" step="10" value={newBudget} onChange={handleBudgetChange} />
+            <div className="col-auto d-flex align-items-center">
+                <span>£</span><input id="budget" className="form-control" type="number" step="10" value={newBudget} onChange={handleBudgetChange} />
             </div>
         </div>
     );

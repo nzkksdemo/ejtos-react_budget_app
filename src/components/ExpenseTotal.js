@@ -8,7 +8,7 @@ const ExpenseTotal = () => {
 
     return (
         <div className="alert alert-primary w-100" style={{marginBottom: 0}}>
-            <span>Spent so far: £{totalExpenses}</span>
+            <span>Spent so far: <b>£{totalExpenses}</b></span>
         </div>
     );
 };

@@ -60,7 +60,8 @@ const AllocationForm = ({}) => {
                 </div>
             </div>
             <div className='col-lg mb-3 mb-lg-0'>
-                <div className="input-group">
+                <div className="input-group d-flex align-items-center">
+                    <span>£</span>
                     <input
                         required='required'
                         id='cost'
