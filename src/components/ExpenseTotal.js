@@ -7,7 +7,7 @@ const ExpenseTotal = () => {
     const totalExpenses = expenses.reduce((total, item) => total + item.cost, 0);
 
     return (
-        <div className="alert alert-primary">
+        <div className="alert alert-primary w-100" style={{marginBottom: 0}}>
             <span>Spent so far: £{totalExpenses}</span>
         </div>
     );

@@ -10,9 +10,13 @@ const Budget = () => {
     };
 
     return (
-        <div className='alert alert-secondary'>
-            <span style={{marginRight: '10px'}}>Budget: £{budget}</span>
-            <input type="number" step="10" value={newBudget} onChange={handleBudgetChange} />
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="budget" class="form-label m-0">Budget: £{budget}</label>
+            </div>
+            <div class="col-auto">
+                <input id="budget" class="form-control" type="number" step="10" value={newBudget} onChange={handleBudgetChange} />
+            </div>
         </div>
     );
 };
