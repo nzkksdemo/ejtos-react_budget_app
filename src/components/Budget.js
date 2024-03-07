@@ -2,11 +2,16 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Budget = () => {
-    const {budget} = useContext(AppContext);
+    const {dispatch, budget} = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
 
     const handleBudgetChange = e => {
         setNewBudget(e.target.value);
+
+        dispatch({
+            type: 'SET_BUDGET',
+            payload: e.target.value
+        });
     };
 
     return (
