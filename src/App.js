@@ -29,13 +29,13 @@ const App = () => {
                     </div>
                 </div>
 
-                <h4>Allocation</h4>
+                <h4 className='mt-5'>Allocation</h4>
                 <div>
                     <ExpenseList />
                 </div>
 
-                <h4>Change Allocation</h4>
-                <div>
+                <h4 className='mt-5'>Change Allocation</h4>
+                <div className='mt-3' style={{backgroundColor: '#e7e7e7'}}>
                     <AllocationForm />
                 </div>
             </div>
