@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
+import { handleNumberOnlyValidation } from '../utilities/inputValidation';
 
 const AllocationForm = ({}) => {
     const {dispatch, remaining} = useContext(AppContext);
@@ -27,7 +28,7 @@ const AllocationForm = ({}) => {
                 payload: expense
             });
         }
-    }
+    };
 
     return (
         <div className='row d-flex align-items-center p-2'>
@@ -62,11 +63,12 @@ const AllocationForm = ({}) => {
                 <div className="input-group">
                     <input
                         required='required'
-                        type='number'
                         id='cost'
+                        type="number"
+                        onKeyPress={handleNumberOnlyValidation}
                         value={cost}
-                        style={{size: 10}}
-                        onChange={(event) => setCost(event.target.value)} className='form-control' />
+                        onChange={(event) => setCost(event.target.value)}
+                        className='form-control' />
                     <button 
                         className="btn btn-primary" 
                         onClick={submitEvent} 
