@@ -60,8 +60,8 @@ const AllocationForm = ({}) => {
                 </div>
             </div>
             <div className='col-lg mb-3 mb-lg-0'>
-                <div className="input-group d-flex align-items-center">
-                    <span>£</span>
+                <div className="input-group">
+                    <span class="input-group-text" id="cost-currency">£</span>
                     <input
                         required='required'
                         id='cost'
@@ -69,7 +69,10 @@ const AllocationForm = ({}) => {
                         onKeyPress={handleNumberOnlyValidation}
                         value={cost}
                         onChange={(event) => setCost(event.target.value)}
-                        className='form-control' />
+                        className='form-control'
+                        aria-label="cost"
+                        aria-describedby="cost-currency"
+                    />
                     <button 
                         className="btn btn-primary" 
                         onClick={submitEvent} 
