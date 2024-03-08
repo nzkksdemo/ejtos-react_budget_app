@@ -7,7 +7,7 @@ import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
-
+import CurrencyDropdown from './components/CurrencyDropdown';
 
 import { AppProvider } from './context/AppContext';
 const App = () => {
@@ -24,8 +24,12 @@ const App = () => {
                         <Remaining />
                     </div>
 
-                    <div className='col-sm d-flex align-items-center mb-2 mb-sm-0'>
+                    <div className='col-sm d-flex align-items-center mb-3 mb-sm-0'>
                         <ExpenseTotal />
+                    </div>
+                    
+                    <div className='col-sm d-flex align-items-center mb-2 mb-sm-0'>
+                        <CurrencyDropdown />
                     </div>
                 </div>
 

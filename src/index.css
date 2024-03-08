@@ -15,3 +15,23 @@ code {
 .input-error{
     outline: 1px solid red;
 }
+
+.currency-dropdown .dropdown-toggle,
+.currency-dropdown .dropdown-toggle:hover,
+.currency-dropdown .dropdown-menu {
+    background-color: #93e499;
+}
+
+.currency-dropdown .dropdown-toggle,
+.currency-dropdown .dropdown-toggle:hover {
+    color: #fff;
+}
+
+.currency-dropdown .dropdown-menu {
+    margin-top: 2px;
+    border: solid 1px #000;
+}
+
+.currency-dropdown .dropdown-menu li {
+    cursor: pointer;
+}
