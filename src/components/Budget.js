@@ -24,9 +24,9 @@ const Budget = () => {
                 <label htmlFor="budget" className="form-label m-0">Budget:</label>
             </div>
             <div className="col-auto d-flex align-items-center">
-                <div class="input-group">
-                    <span class="input-group-text" id="budgetCurrency">£</span>
-                    <input id="budget" class="form-control" type="number" step="10" value={newBudget} onChange={handleBudgetChange}  aria-label="budget" aria-describedby="budgetCurrency" />
+                <div className="input-group">
+                    <span className="input-group-text" id="budgetCurrency">£</span>
+                    <input id="budget" className="form-control" type="number" step="10" value={newBudget} onChange={handleBudgetChange}  aria-label="budget" aria-describedby="budgetCurrency" />
                 </div>
             </div>
         </div>
