@@ -5,7 +5,7 @@ const ExpenseTotal = () => {
     const {totalExpenses} = useContext(AppContext);
 
     return (
-        <div className="alert alert-primary w-100" style={{marginBottom: 0}}>
+        <div className="alert alert-primary w-100 p-2" style={{marginBottom: 0}}>
             <span>Spent so far: <b>£{totalExpenses}</b></span>
         </div>
     );

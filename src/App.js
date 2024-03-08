@@ -16,19 +16,19 @@ const App = () => {
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
                 <div className='row my-3 py-2' style={{backgroundColor: '#e7e7e7'}}>
-                    <div className='col-sm d-flex align-items-center mb-3 mb-sm-0'>
+                    <div className='col-lg d-flex align-items-center mb-3 mb-lg-0'>
                         <Budget />
                     </div>
 
-                    <div className='col-sm d-flex align-items-center mb-3 mb-sm-0'>
+                    <div className='col-lg d-flex align-items-center mb-3 mb-lg-0'>
                         <Remaining />
                     </div>
 
-                    <div className='col-sm d-flex align-items-center mb-3 mb-sm-0'>
+                    <div className='col-lg d-flex align-items-center mb-3 mb-lg-0'>
                         <ExpenseTotal />
                     </div>
                     
-                    <div className='col-sm d-flex align-items-center mb-2 mb-sm-0'>
+                    <div className='col-lg d-flex align-items-center mb-2 mb-lg-0'>
                         <CurrencyDropdown />
                     </div>
                 </div>
