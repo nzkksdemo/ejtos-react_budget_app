@@ -35,3 +35,14 @@ code {
 .currency-dropdown .dropdown-menu li {
     cursor: pointer;
 }
+
+.imageButton {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.imageButton img {
+    width: 24px;
+    height: 24px;
+}

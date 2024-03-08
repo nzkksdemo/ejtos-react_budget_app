@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Budget = () => {
-    const {dispatch, budget, totalExpenses} = useContext(AppContext);
+    const {dispatch, budget, totalExpenses, currency} = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
 
     const handleBudgetChange = e => {
@@ -23,7 +23,7 @@ const Budget = () => {
             <label htmlFor="budget" className="form-label m-0">Budget:</label>
             <div className="d-flex align-items-center">
                 <div className="input-group">
-                    <span className="input-group-text" id="budgetCurrency">£</span>
+                    <span className="input-group-text" id="budgetCurrency">{currency}</span>
                     <input id="budget" className="form-control" type="number" step="10" value={newBudget} onChange={handleBudgetChange}  aria-label="budget" aria-describedby="budgetCurrency" />
                 </div>
             </div>

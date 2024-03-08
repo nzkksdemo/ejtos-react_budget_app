@@ -3,7 +3,7 @@ import { AppContext } from '../context/AppContext';
 import { handleNumberOnlyValidation } from '../utilities/inputValidation';
 
 const AllocationForm = ({}) => {
-    const {dispatch, remaining} = useContext(AppContext);
+    const {dispatch, remaining, currency} = useContext(AppContext);
     const [name, setName] = useState('');
     const [cost, setCost] = useState('');
     const [action, setAction] = useState('');
@@ -61,7 +61,7 @@ const AllocationForm = ({}) => {
             </div>
             <div className='col-lg mb-3 mb-lg-0'>
                 <div className="input-group">
-                    <span className="input-group-text" id="cost-currency">£</span>
+                    <span className="input-group-text" id="cost-currency">{currency}</span>
                     <input
                         required='required'
                         id='cost'
